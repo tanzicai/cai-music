@@ -17,10 +17,10 @@ RUN mvn -s /app/settings.xml -f /app/pom.xml clean package
 
 # ENV
 
-ENV MYSQL_HOST=10.0.224.5
-ENV    MYSQL_PORT=3306
-ENV    DATABASE_NAME=root
-ENV    MYSQL_USER_NAME=root
+#ENV MYSQL_HOST=10.0.224.5
+#ENV    MYSQL_PORT=3306
+#ENV    DATABASE_NAME=root
+#ENV    MYSQL_USER_NAME=root
 
 # 选择运行时基础镜像
 FROM alpine:3.13
