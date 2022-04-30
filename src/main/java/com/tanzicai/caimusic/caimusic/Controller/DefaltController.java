@@ -1,10 +1,11 @@
 package com.tanzicai.caimusic.caimusic.Controller;
 
 import org.apache.logging.log4j.message.StringFormattedMessage;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
+@CrossOrigin
 @RestController
 @RequestMapping("/testHello")
 public class DefaltController {
