@@ -37,6 +37,9 @@ public class UserServiceImpl extends BaseService implements UserService {
         checkUserName(userCreateRequest.getUsername());
         User user = mapper.createEntity(userCreateRequest);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
+        System.out.println("********************");
+        System.out.println(user.getPassword());
+        System.out.println("********************");
         return mapper.toDto(repository.save(user));
     }
 
