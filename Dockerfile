@@ -27,7 +27,7 @@ RUN apk add --update --no-cache openjdk8-jre-base \
 WORKDIR /app
 
 # 将构建产物jar包拷贝到运行时目录中
-COPY --from=build /app/target/yili-music-0.0.1.jar .
+COPY --from=build /app/target/cai-music-0.0.1.jar .
 
 # 暴露端口
 EXPOSE 80
